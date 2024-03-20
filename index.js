@@ -1654,6 +1654,7 @@ async function mintNft() {
       let explorerLink = `https://optimism-sepolia.blockscout.com/tx/${result.transactionHash}`;
       txInfo.children[0].innerHTML = `<a href=${explorerLink} target="_blank">Your NFT is minted</a>`;
       txInfo.classList.remove("tx-hidden");
+      bridge.classList.add("button-bridge-activated");
 
       setTimeout(() => {
         txInfo.classList.add("tx-hidden");
@@ -1667,7 +1668,6 @@ async function mintNft() {
   const jokeText = `${firstLine.textContent}_______${secondLine.textContent}`;
 
   await mintNFT2(jokeText);
-  bridge.classList.add("button-bridge-activated");
   //return
 }
 
