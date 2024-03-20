@@ -147,6 +147,21 @@ h2 {
     margin: 20px;
 }
 
+.succesedBridge-textBlock {
+    margin: 20px;
+}
+
+.succesedBridge {
+    background-color: rgb(61, 133, 28);
+    position: absolute;
+    font-weight: 300;
+    border-radius: 10px;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transition: .3s;
+}
+
 .tx-hidden {
     transform: translate(-50%, -100px);
     transition: .3s;
