@@ -19,10 +19,8 @@ let accounts;
 let currentTokenID;
 
 async function executeCommand() {
-  //const command = 'echo "fdfdfdfdfd"'
-  // const command = `just send-nft-info`;
   const command = "node scripts/private/_send-nft-info-config.js";
-  await fetch('http://localhost:3000/execute-command', {
+  await fetch('http://213.111.123.79:3000/execute-command', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
