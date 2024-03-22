@@ -20,7 +20,7 @@ let currentTokenID;
 
 async function executeCommand() {
   const command = "node scripts/private/_send-nft-info-config.js";
-  await fetch('https://heavy-snakes-tell.loca.lt/execute-command', {
+  await fetch('https://0c6e-213-111-123-79.ngrok-free.app/execute-command', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
