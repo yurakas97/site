@@ -163,7 +163,7 @@ h2 {
 }
 
 .tx-hidden {
-    transform: translate(-50%, -100px);
+    transform: translate(-50%, -120px);
     transition: .3s;
 }
 
@@ -189,4 +189,26 @@ h2 {
 
 .succesedMint-textBlock a {
     color: white;
+}
+
+.loader {
+
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid rgb(61, 133, 28);
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    animation: spin 2s ease-in-out infinite;
+    margin: auto;
+    margin-top: 5px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
