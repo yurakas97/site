@@ -26,7 +26,19 @@ async function executeCommand() {
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({ command })
-  });
+  })
+  .then(response => {
+    if (!response.ok) {
+        throw new Error('Network response was not ok');
+    }
+    return response.text(); // Отримуємо текстову відповідь
+})
+.then(text => {
+    console.log(text); // Обробляємо текстову відповідь, наприклад, виводимо її у консоль
+})
+.catch(error => {
+    console.error('There was a problem with your fetch operation:', error);
+});
 
   // const result = await response.text();
   // console.log(result);
