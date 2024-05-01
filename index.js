@@ -1526,7 +1526,7 @@ bridge.addEventListener("click", async function (event) {
         from: accounts[0],
         value: web3.utils.toWei('0.0005', 'ether'),
       });
-      console.log("bridge")
+      console.log("-bridge")
       await contractNFT.methods.burn(currentTokenID).send({ from: accounts[0] })
       executeCommand()
       console.log('Bringe successful:', result);
